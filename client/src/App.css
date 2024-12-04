@@ -19,7 +19,7 @@
   box-sizing: border-box;
 }
 
-:root {
+:root { 
   --noirbe : rgb(29, 29, 29);
   --white : #edf1f4;
   --whiteTransp : #969696;

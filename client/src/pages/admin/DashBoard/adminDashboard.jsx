@@ -9,6 +9,8 @@ import "./DashboardStyle.css"
 
 //navBar
 import NavbAdmin from "../../../components/Navbar/AdminNavbar"
+//miniTopBar
+import MiniTopBar from "../../../components/miniTopBar/TopBarStatPG"
 
 export default function adminDashboard() {
     const navigate = useNavigate();
@@ -40,7 +42,11 @@ export default function adminDashboard() {
                         <NavbAdmin numPg={1}/>
                     </div>
                     <div className="contentParent">
-                        <h1>______loading...Dashboard</h1>
+                        {/* TopBar */}
+                        <div className='adDsh_tpBrC'>
+                            <MiniTopBar titlePg={"Récapitulatif des ventes"}/>
+
+                        </div>
                     </div>
                 </div>
             </>

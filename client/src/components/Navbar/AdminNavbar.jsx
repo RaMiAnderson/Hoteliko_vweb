@@ -21,6 +21,10 @@ import bonHomm from "../../assets/img/Principale/userPers.png"
 import "./navBarStyle.css"
 
 export default function AdminNavbar({numPg}) {
+
+  //Color body
+  document.querySelector(".bodyClass").style.backgroundColor = "#edf1f4"
+
   const navigate = useNavigate();
   
   const [indexActivList, setIndexActivList] = useState(numPg);
@@ -140,7 +144,7 @@ export default function AdminNavbar({numPg}) {
                 <li className={`${indexActivList === 5 ? "selected" : ""}`} onClick={() => ifClick(5)}>
                   {/* liste des stock, date dernier reaprovisionemt, qt */}
                   <div className="iconList"><InventoryIcon sx={{width: 27, height:27}}/></div>
-                  <div className="nameList">Iventaires</div>
+                  <div className="nameList">Inventaires</div>
                 </li>
          
                 <li className={`${indexActivList === 6 ? "selected" : ""}`} onClick={() => ifClick(6)}>

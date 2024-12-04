@@ -11,3 +11,9 @@
     align-items: center;
     /* position: fixed; */
 }
+
+.contentParent{
+    padding-left: 16px;
+    padding-right: 10px;
+    width: 100%;
+}

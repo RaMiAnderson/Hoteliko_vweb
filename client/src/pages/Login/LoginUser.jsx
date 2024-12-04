@@ -14,7 +14,8 @@ import {toast} from "react-hot-toast"
 
 
 let LoginUser = () => {
-
+  //Color body
+  document.querySelector(".bodyClass").style.backgroundColor = "white"
 //CONTROLL IF ALREADY CONNECTED
   const navigate = useNavigate();
   const [token, setToken] = useState(sessionStorage.getItem("user"));

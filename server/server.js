@@ -34,6 +34,17 @@ app.get("/", (req, res) => {
 });
 
 
+//add Tmp Admin
+    /*const addAdmin = require("./controller/addAdminController");
+    let tmpAdmin = {
+        Nom : "Rakoto",
+        Prenom : "Rabe",
+        Genre : "Homme",
+        Username : "RakRabe",
+        Password: "Rab1234#"
+    } 
+    addAdmin.addAdminCtrller(tmpAdmin);*/
+
 
 //Port app 
 let port = process.env.PORT || 8011;
