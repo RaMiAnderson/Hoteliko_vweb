@@ -14,10 +14,11 @@ const ColorButton = styled(Button)(({ theme }) => ({
   },
 }));
 
-export default function CustomizedButtons({bgColor, bgColorH, bgColorA, textBtn, width, padding, StartIcon}) {
+export default function CustomizedButtons({variant, color, bgColor, bgColorH, bgColorA,brdrColor, brdrColorH, textBtn, width, padding, StartIcon}) {
     const BootstrapButton = styled(Button)({
         boxShadow: 'none',
         display : "flex",
+        color : color,
         width: width,
         alignItems : "center",
         justifyContent : "space-evenly",
@@ -26,24 +27,24 @@ export default function CustomizedButtons({bgColor, bgColorH, bgColorA, textBtn,
         padding: padding,
         lineHeight: 1.5,
         backgroundColor: bgColor,
-        borderColor: bgColor,
+        borderColor: brdrColor,
         fontFamily: "poppins",
         '&:hover': {
           backgroundColor: bgColorH,
-          borderColor: bgColorH,
+          borderColor: brdrColorH,
           boxShadow: 'none',
         },
         '&:active': {
           boxShadow: 'none',
           backgroundColor: bgColorA,
-          borderColor: bgColorA,
+          borderColor: brdrColorH,
         },
         
       });
   return (
     <Stack spacing={2} direction="row">
       {/* <ColorButton variant="contained">Custom CSS</ColorButton> */}
-      <BootstrapButton variant="contained" >
+      <BootstrapButton variant={variant} >
         {StartIcon}
         {textBtn}
       </BootstrapButton>

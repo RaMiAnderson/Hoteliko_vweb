@@ -17,9 +17,7 @@ export default function ControlledComponent({label}) {
           value={value} 
           onChange={(newValue) => setValue(newValue)}
           sx={{
-            width: '30px',  // Définir la largeur
-            height: '70px',   // Définir la hauteur (peut ne pas avoir d'effet visible selon le style par défaut)
-            '&.MuiInputBase-root':{heigth: '40px'}
+            width: '30px !important',  // Définir la largeur
           }}/>
       </DemoContainer>
     </LocalizationProvider>
