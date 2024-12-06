@@ -25,7 +25,11 @@
     margin-top: 2px;
 }
 .titlePgStyle{
-    font-weight: 500;
-    opacity: .9;
+    /* font-weight: 600; */
+    font-family: poppinsBold;
+    opacity: .8;
     font-size: 22px;
+}
+.mnTpBr_rightPrt .More{
+    margin-left: 10px;
 }

@@ -8,6 +8,7 @@ import "./adminArticle.css"
 
 //navBar
 import NavbAdmin from "../../../components/Navbar/AdminNavbar"
+import TopNavSansDt from "../../../components/miniTopBar/TopBarSansDate"
 
 
 
@@ -42,7 +43,10 @@ export default function adminArticles() {
             <NavbAdmin numPg={2}/>
           </div>
           <div className="contentParent">
-            <h1>______loading...Article</h1>
+            {/* TopBar */}
+            <div className='artcl_tpBrC'>
+              <TopNavSansDt titlePg={"Nos Articles"}/>
+            </div>
           </div>
         </div>
       </>

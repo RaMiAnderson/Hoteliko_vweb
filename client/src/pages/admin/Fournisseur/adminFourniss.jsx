@@ -8,8 +8,8 @@ import "./adminFourniss.css"
 
 //navBar
 import NavbAdmin from "../../../components/Navbar/AdminNavbar"
-
-
+import TopNavSansDt from "../../../components/miniTopBar/TopBarSansDate"
+ 
 
 export default function adminFourniss() {
   const navigate = useNavigate();
@@ -41,7 +41,10 @@ export default function adminFourniss() {
             <NavbAdmin numPg={3}/>
           </div>
           <div className="contentParent">
-            <h1>______loading...Fourniss</h1>
+            {/* TopBar */}
+            <div className='artcl_tpBrC'>
+              <TopNavSansDt titlePg={"Nos Fournisseurs"}/>
+            </div>
           </div>
         </div>
       </>

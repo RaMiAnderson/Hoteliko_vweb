@@ -8,6 +8,7 @@ import "./adminRavitaillement.css"
 
 //navBar
 import NavbAdmin from "../../../components/Navbar/AdminNavbar"
+import TopNavSansDt from "../../../components/miniTopBar/TopBarSansDate"
 
 
 export default function adminRavitaillement() {
@@ -40,7 +41,10 @@ export default function adminRavitaillement() {
             <NavbAdmin numPg={6}/>
           </div>
           <div className="contentParent">
-            <h1>______loading...Ravitaillements</h1>
+            {/* TopBar */}
+            <div className='rav_tpBrC'>
+              <TopNavSansDt titlePg={"Se Ravitailler"}/>
+            </div>
           </div>
         </div>
       </>

@@ -34,7 +34,7 @@ export default function adminDashboard() {
     
 
     // All -- firstime controll aff
-    if(token !== null)
+    if(token !== null) 
         return (
             <>
                 <div className='adminDashBoardParent'>
@@ -45,7 +45,6 @@ export default function adminDashboard() {
                         {/* TopBar */}
                         <div className='adDsh_tpBrC'>
                             <MiniTopBar titlePg={"Récapitulatif des ventes"}/>
-
                         </div>
                     </div>
                 </div>

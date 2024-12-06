@@ -8,7 +8,7 @@ import "./adminUserManage.css"
 
 //navBar
 import NavbAdmin from "../../../components/Navbar/AdminNavbar"
-
+import TopNavSansDt from "../../../components/miniTopBar/TopBarSansDate"
 
 
 export default function adminUserManage() {
@@ -41,7 +41,10 @@ export default function adminUserManage() {
             <NavbAdmin numPg={8}/>
           </div>
           <div className="contentParent">
-            <h1>______loading...Utilisateurs</h1>
+            {/* TopBar */}
+            <div className='user_tpBrC'>
+              <TopNavSansDt titlePg={"Mes employés"}/>
+            </div>
           </div>
         </div>
       </>

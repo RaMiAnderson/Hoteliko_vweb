@@ -8,8 +8,8 @@ import "./adminIventory.css"
 
 //navBar
 import NavbAdmin from "../../../components/Navbar/AdminNavbar"
-
-
+import MiniTopBar from "../../../components/miniTopBar/TopBarStatPG"
+ 
 
 export default function adminIventory() {
   const navigate = useNavigate();
@@ -41,7 +41,10 @@ export default function adminIventory() {
             <NavbAdmin numPg={5}/>
           </div>
           <div className="contentParent">
-            <h1>______loading...Inventaire</h1>
+            {/* TopBar */}
+            <div className='inv_tpBrC'>
+              <MiniTopBar titlePg={"Inventaires"}/>
+            </div>
           </div>
         </div>
       </>

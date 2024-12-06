@@ -8,7 +8,7 @@ import "./adminClientP.css"
 
 //navBar
 import NavbAdmin from "../../../components/Navbar/AdminNavbar"
-
+import TopNavSansDt from "../../../components/miniTopBar/TopBarSansDate"
 
 
 export default function adminClientP() {
@@ -41,7 +41,10 @@ export default function adminClientP() {
             <NavbAdmin numPg={4}/>
           </div>
           <div className="contentParent">
-            <h1>______loading...Clients</h1>
+            {/* TopBar */}
+            <div className='artcl_tpBrC'>
+              <TopNavSansDt titlePg={"Nos Clients"}/>
+            </div>
           </div>
         </div>
       </>

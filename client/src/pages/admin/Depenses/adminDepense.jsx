@@ -8,8 +8,8 @@ import "./adminDepense.css"
 
 //navBar
 import NavbAdmin from "../../../components/Navbar/AdminNavbar"
-
-
+import MiniTopBar from "../../../components/miniTopBar/TopBarStatPG"
+ 
 
 export default function adminDepense() {
   const navigate = useNavigate();
@@ -41,7 +41,10 @@ export default function adminDepense() {
             <NavbAdmin numPg={7}/>
           </div>
           <div className="contentParent">
-            <h1>______loading...Depenses</h1>
+            {/* TopBar */}
+            <div className='dep_tpBrC'>
+                <MiniTopBar titlePg={"Nos Dépenses"}/>
+            </div>
           </div>
         </div>
       </>

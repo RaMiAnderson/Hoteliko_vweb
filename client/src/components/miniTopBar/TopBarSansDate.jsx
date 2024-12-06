@@ -4,7 +4,6 @@ import AddIcon from '@mui/icons-material/Add';
 // import SettingIcon
 import MoreBtn from "../SettingTopBar/More"
 
-import DateTest from "../inputDate/DatePicker"
 
 import "./miniTopBar.css"
 
@@ -28,12 +27,6 @@ export default function TopBarStatPG({titlePg}) {
               StartIcon={<AddIcon/>}>
 
             </BasicButton>
-            </div>
-            <div className='DateTest'>
-                <DateTest  label={"Date début"}/>
-            </div>
-            <div className='DateTest'>
-                <DateTest label={"Date fin"}/>
             </div>
             <div className='More'>
               <MoreBtn/>
