@@ -9,9 +9,18 @@ export default function ControlledComponent({label}) {
   const [value, setValue] = React.useState(null);
 
   return (
-    <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <DemoContainer components={['DatePicker']}>
-        <DatePicker format='DD-MM-YYYY' label={label} value={value} onChange={(newValue) => setValue(newValue)} />
+    <LocalizationProvider  dateAdapter={AdapterDayjs}>
+      <DemoContainer  components={['DatePicker']}>
+        <DatePicker 
+          format='DD-MM-YYYY'
+          label={label} 
+          value={value} 
+          onChange={(newValue) => setValue(newValue)}
+          sx={{
+            width: '30px',  // Définir la largeur
+            height: '70px',   // Définir la hauteur (peut ne pas avoir d'effet visible selon le style par défaut)
+            '&.MuiInputBase-root':{heigth: '40px'}
+          }}/>
       </DemoContainer>
     </LocalizationProvider>
   );

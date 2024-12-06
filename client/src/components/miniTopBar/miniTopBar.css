@@ -19,7 +19,7 @@
 }
 .DateTest{
     margin-top: -6px;
-    margin-left: 10px;
+    margin-left: 10px; 
 }
 .BtnNewTick{
     margin-top: 2px;
@@ -27,4 +27,5 @@
 .titlePgStyle{
     font-weight: 500;
     opacity: .9;
+    font-size: 22px;
 }
