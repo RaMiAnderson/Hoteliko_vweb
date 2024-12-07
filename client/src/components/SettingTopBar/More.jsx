@@ -13,6 +13,7 @@ import SegmentIcon from '@mui/icons-material/Segment';
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import DarkOrWhite from "../DarkOrWhiteToggle/DarkOrWhite"
 import StyleIcon from '@mui/icons-material/Style';
+import { useTheme } from '@emotion/react';
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -59,6 +60,7 @@ const StyledMenu = styled((props) => (
 
 export default function CustomizedMenus() {
   const [anchorEl, setAnchorEl] = React.useState(null);
+ 
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -69,7 +71,7 @@ export default function CustomizedMenus() {
   const handle = () => {
     return 0;
   }
-
+ 
   return (
     <div>
       <Button
@@ -111,7 +113,7 @@ export default function CustomizedMenus() {
         </MenuItem>
         <Divider sx={{ my: 0.5 }} />
         <MenuItem onClick={handle} disableRipple>
-          <DarkOrWhite ifClicked={false} />
+          <DarkOrWhite  />
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple disabled sx={{
             display:"flex", 

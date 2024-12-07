@@ -5,10 +5,12 @@ import App from './App.jsx'
 //route ImportDep
 import {createBrowserRouter, RouterProvider, Route, Navigate} from 'react-router-dom';
 import { Toaster } from "react-hot-toast";
+import { ThemeProvider } from './context/themeContext.tsx';
 
 
 
 //Routes
+/*
 const route = createBrowserRouter([
   {
     path: "/auth/login",
@@ -60,11 +62,14 @@ const route = createBrowserRouter([
   }
 ]);
 
-
+*/
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <ThemeProvider>
     <Toaster />
-    < RouterProvider router={route}/>
+    <App/>
+    </ThemeProvider>
+   
   </StrictMode>
 )

@@ -3,8 +3,8 @@ import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
-import Stack from '@mui/material/Stack';
-import Typography from '@mui/material/Typography';
+import { useTheme } from '../../context/themeContext';
+
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -202,26 +202,17 @@ const AntSwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 
-export default function CustomizedSwitches({ifClicked}) {
+
+export default function CustomizedSwitches({onClick}) {
+  const {changeTheme,theme} = useTheme()
   return (
     <FormGroup sx={{width:"100%"}}>
       <FormControlLabel
-        control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked={ifClicked} />}
+        control={<MaterialUISwitch sx={{ m: 1 }} />}
         label="Thème"
+        onChange={changeTheme}
       />
-      {/* <FormControlLabel
-        control={<Android12Switch defaultChecked />}
-        label="Android 12"
-      />
-      <FormControlLabel
-        control={<IOSSwitch sx={{ m: 1 }} defaultChecked />}
-        label="iOS style"
-      />
-      <Stack direction="row" spacing={1} sx={{ alignItems: 'center' }}>
-        <Typography>Off</Typography>
-        <AntSwitch defaultChecked inputProps={{ 'aria-label': 'ant design' }} />
-        <Typography>On</Typography>
-      </Stack> */}
+    
     </FormGroup>
   );
 }

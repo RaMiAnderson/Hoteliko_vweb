@@ -35,6 +35,9 @@
   --bodyColor : rgba(51, 51, 51, 0.966);
 }
 
-body{
-  background-color: var(--white);
+body.ligth{
+  background-color: var(--white) !important;
+}
+body.dark{
+  background-color: var(--noirbe) !important;
 }

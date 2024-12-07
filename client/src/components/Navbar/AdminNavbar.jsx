@@ -23,7 +23,7 @@ import "./navBarStyle.css"
 export default function AdminNavbar({numPg}) {
 
   //Color body
-  document.querySelector(".bodyClass").style.backgroundColor = "#edf1f4"
+  //document.querySelector(".bodyClass").style.backgroundColor = "#edf1f4"
 
   const navigate = useNavigate();
   
