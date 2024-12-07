@@ -7,10 +7,13 @@ import MoreBtn from "../SettingTopBar/More"
 import DateTest from "../inputDate/DatePicker"
 
 import "./miniTopBar.css"
+import { useTheme } from '../../context/themeContext';
+
 
 export default function TopBarStatPG({titlePg}) {
+  const {theme} = useTheme()
   return (
-    <div className='mnTpBr_Parent'>
+    <div className='mnTpBr_Parent' style={theme==="light" ? {backgroundColor:"white"} :{backgroundColor:"black"} }>
         <h3 className='titlePgStyle'>{titlePg}</h3> 
         <div className='mnTpBr_rightPrt'>
             <div className='BtnNewTick'>
