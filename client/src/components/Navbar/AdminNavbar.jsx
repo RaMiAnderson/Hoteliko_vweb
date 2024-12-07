@@ -19,12 +19,13 @@ import bonHomm from "../../assets/img/Principale/userPers.png"
 
 //Style
 import "./navBarStyle.css"
+import { useTheme } from '../../context/themeContext'
 
 export default function AdminNavbar({numPg}) {
-
+  const {theme} = useTheme()
   //Color body
   //document.querySelector(".bodyClass").style.backgroundColor = "#edf1f4"
-
+  
   const navigate = useNavigate();
   
   const [indexActivList, setIndexActivList] = useState(numPg);
@@ -94,7 +95,7 @@ export default function AdminNavbar({numPg}) {
   
   return (
     <>
-        <div className = {`parentNavbar ${isToggleActive ? "Active-Toggle" : ""}`} >
+        <div className = {`parentNavbar ${isToggleActive ? "Active-Toggle" : ""}`}  style={theme==="light" ? {backgroundColor:"black"} :{backgroundColor:"white"} }>
           {/* LOGO */}
           <div className="logoSection">
             <div className='logoFile'>sary</div>

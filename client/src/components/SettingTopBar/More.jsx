@@ -128,7 +128,7 @@ export default function CustomizedMenus() {
           </span>
           <br /> 
           <span style={{fontSize:"12px"}}>
-            Logiciel avec une license,  toute <strong>copie <br /> ou crack</strong> du logiciel est <strong>strictement <br /> interdite</strong>
+            Logiciel avec une license,  toute <strong>copie <br /> ou crack</strong> du logiciel est <strong>strictement <br /> interdite</strong>(Fuck)
           </span> 
           
         </MenuItem>
