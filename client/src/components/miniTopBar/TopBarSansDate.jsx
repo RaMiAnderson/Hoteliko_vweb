@@ -6,10 +6,12 @@ import MoreBtn from "../SettingTopBar/More"
 
 
 import "./miniTopBar.css"
+import { useTheme } from '../../context/themeContext';
 
 export default function TopBarStatPG({titlePg}) {
+  const {theme} = useTheme()
   return (
-    <div className='mnTpBr_Parent'>
+    <div className='mnTpBr_Parent' style={theme==="light" ? {backgroundColor:"white"} :{backgroundColor:"rgba(51, 51, 51, 0.966)"} }>
         <h3 className='titlePgStyle'>{titlePg}</h3> 
         <div className='mnTpBr_rightPrt'>
             <div className='BtnNewTick'>
