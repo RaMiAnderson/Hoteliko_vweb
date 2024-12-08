@@ -204,15 +204,23 @@ const AntSwitch = styled(Switch)(({ theme }) => ({
 
 
 export default function CustomizedSwitches({onClick}) {
-  const {changeTheme,theme} = useTheme()
+  const {changeTheme,theme} = useTheme() // valeur de theme est dark ou ligth
+  const [checked, setChecked] = React.useState(theme === 'dark');
+
+  React.useEffect(() => {
+    setChecked(theme === 'dark');
+  }, [theme]);
+
+  const handleChange = (event) => {
+    setChecked(event.target.checked);
+    changeTheme();
+  };
   return (
-    <FormGroup sx={{width:"100%"}}>
-      <FormControlLabel
-        control={<MaterialUISwitch sx={{ m: 1 }} />}
-        label="Thème"
-        onChange={changeTheme}
-      />
-    
-    </FormGroup>
+    <FormGroup sx={{ width: '100%' }}>
+    <FormControlLabel
+      control={<MaterialUISwitch sx={{ m: 1 }} checked={checked} onChange={handleChange} />}
+      label="Thème"
+    />
+  </FormGroup>
   );
 }
