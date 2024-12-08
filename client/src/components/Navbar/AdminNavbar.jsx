@@ -24,7 +24,7 @@ import { useTheme } from '../../context/themeContext'
 export default function AdminNavbar({numPg}) {
   const {theme} = useTheme()
   //Color body
-  //document.querySelector(".bodyClass").style.backgroundColor = "#edf1f4"
+  // document.querySelector(".bodyClass").style.backgroundColor = "#edf1f4"
   
   const navigate = useNavigate();
   
