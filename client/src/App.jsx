@@ -70,7 +70,7 @@ export default {
  const App = ()=>{
   useEffect(() => {
     const mode = localStorage.getItem("mode"); // Récupérer la valeur de mode dans localStorage
-    console.log("Mode dans localStorage :", mode);
+    // console.log("Mode dans localStorage :", mode);
     
     if (mode === 'true') {
         document.body.classList.add("dark");

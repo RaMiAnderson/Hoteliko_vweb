@@ -9,5 +9,5 @@ const getDataUser = async (token) => {
 }
 
 export default {
-    getDataUser
+    getDataUser 
 }

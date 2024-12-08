@@ -1,6 +1,7 @@
 .mnTpBr_Parent{
     padding-top: 12px;
     padding-bottom: 5px;
+    padding-left: 15px;
     width: 100%;
     height: 80px;
     display: flex;
@@ -8,9 +9,8 @@
     justify-content: space-between;
     background-color: var(--white);
     /* background-color: red; */
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 25px;
     border-bottom-right-radius: 10px;
-    
 
 }
 
@@ -34,4 +34,5 @@
 }
 .mnTpBr_rightPrt .More{
     margin-left: 10px;
+    margin-right: 10px;
 }
