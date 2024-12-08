@@ -13,7 +13,7 @@ import { useTheme } from '../../context/themeContext';
 export default function TopBarStatPG({titlePg}) {
   const {theme} = useTheme()
   return (
-    <div className='mnTpBr_Parent' style={theme==="light" ? {backgroundColor:"white"} :{backgroundColor:"rgba(51, 51, 51, 0.966)"} }>
+    <div className='mnTpBr_Parent' style={theme==="light" ? {backgroundColor:"var(--whiteBe)"} :{backgroundColor:"rgb(29, 29, 29)"} }>
         <h3 className='titlePgStyle'>{titlePg}</h3> 
         <div className='mnTpBr_rightPrt'>
             <div className='BtnNewTick'>

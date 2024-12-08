@@ -95,7 +95,7 @@ export default function AdminNavbar({numPg}) {
   
   return (
     <>
-        <div className = {`parentNavbar ${isToggleActive ? "Active-Toggle" : ""}`}  style={theme==="light" ? {backgroundColor:"rgba(51, 51, 51, 0.966)"} :{backgroundColor:"white"} } >
+        <div className = {`parentNavbar ${isToggleActive ? "Active-Toggle" : ""}`}  style={theme==="light" ? {backgroundColor:"rgb(29, 29, 29)"} :{backgroundColor:"rgb(29, 29, 29)"} } >
           {/* LOGO */}
           <div className="logoSection">
             <div className='logoFile'>sary</div>
