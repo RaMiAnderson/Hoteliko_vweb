@@ -203,8 +203,8 @@ const AntSwitch = styled(Switch)(({ theme }) => ({
 }));
 
 
-export default function CustomizedSwitches({onClick}) {
-  const {changeTheme,theme} = useTheme() // valeur de theme est dark ou ligth
+export default function CustomizedSwitches() {
+  const {changeTheme,theme} = useTheme() 
   const [checked, setChecked] = React.useState(theme === 'dark');
 
   React.useEffect(() => {
