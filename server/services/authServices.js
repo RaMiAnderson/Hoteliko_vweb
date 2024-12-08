@@ -1,3 +1,4 @@
+const { errorHandler } = require("../middlewares/errorHandler");
 const admin = require("../models/admin");
 const User = require("../models/user");
 const cryptedBcrypt = require("./cryptageBcrypt"); 
@@ -26,9 +27,11 @@ const checkUserInBD = async (user) => {
                 };
                 return response;
             }
-            return { status: 403, message: "Mot de passe incorrect" };
+           throw new errorHandler("Mot de passe incorrect",400)
         } else {
             const userBase = await User.findOne({ username: user.username });
+            if(!userBase)
+                return new errorHandler("Username introuvable",404)
             if (userBase !== null) {
                 const resultCheck = await cryptedBcrypt.comparePasswordEncrypted(user.password, userBase.password);
                 if (resultCheck) {
@@ -40,15 +43,13 @@ const checkUserInBD = async (user) => {
                     };
                     return response;
                 }
-                return { status: 403, message: "Mot de passe Incorrect" };
+                return new errorHandler("Mot de passe incorrect",400)
                 
-            } else {
-                return { status: 403, message: "Votre username est introuvable" };
-            }
+            } 
         }
     } catch (err) {
         console.log("ERROR login service : " + err);
-        throw new Error("ErrorServer ");
+        throw new errorHandler(err.message)
     }
 };
 

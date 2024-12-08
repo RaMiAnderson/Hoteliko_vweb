@@ -15,6 +15,7 @@ import {toast} from "react-hot-toast"
 
 let LoginUser = () => {
   //Color body
+  if(document.body.classList.contains(".bodyClass"))
   document.querySelector(".bodyClass").style.backgroundColor = "white"
 //CONTROLL IF ALREADY CONNECTED
   const navigate = useNavigate();

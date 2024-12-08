@@ -25,7 +25,8 @@ initDataBase();
 
 //Route
 
-const routes = require("./routes/routes")
+const routes = require("./routes/routes");
+const { errorMiddleware } = require('./middlewares/errorHandler');
 app.use(routes);
 
 
@@ -47,6 +48,7 @@ app.get("/", (req, res) => {
 
 
 //Port app 
+app.use(errorMiddleware)
 let port = process.env.PORT || 8011;
 app.listen(port, ()=>  {
     console.log("Server in http://localhost:" + port);

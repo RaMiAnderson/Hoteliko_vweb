@@ -2,7 +2,7 @@ const authService = require("../services/authServices");
 const genTokenUsrr = require("../tools/jwtToken");
 
 
-const loginController = async (req, res) => {
+const loginController = async (req, res,next) => {
     try{
         const result = await authService.loginService(req.body);
         const userValid = {
