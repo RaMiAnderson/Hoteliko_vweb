@@ -51,7 +51,7 @@ export default function adminDashboard() {
                             <div className='leftPart'>
                                 {/* topPart */}
                                 <div className='topPart'>
-                                
+                                    
                                 </div>
                                 {/* bottomPart */}
                                 <div className='bottomPart'>
