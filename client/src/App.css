@@ -21,7 +21,9 @@
 
 :root { 
   --noirbe : rgb(29, 29, 29);
+  --noirbeBorder: rgba(29, 29, 29, 0.603);
   --white : #edf1f4;
+  --whiteKely : #edf1f4cb;
   --whiteTransp : #969696;
   --whiteBe : rgb(248, 247, 247);
   --whiteNav :  #8ac2ec;

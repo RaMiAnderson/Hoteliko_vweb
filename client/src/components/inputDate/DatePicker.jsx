@@ -16,21 +16,24 @@ export default function ControlledComponent({label}) {
           format='DD-MM-YYYY'
           label={label} 
           value={value} 
-          onChange={(newValue) => setValue(newValue)}
+          onChange={(newValue) => setValue(newValue)} 
           sx={{
             width: '30px !important', // Ajuster la largeur de l'input
             "& .MuiInputLabel-root": {
-              color: theme === "light" ? "black" : "white", 
+              color: theme === "light" ? "var(--noirbeBorder)" : "var(--whiteKely)", 
             },
             "& .MuiOutlinedInput-root": {
               "& fieldset": {
-                borderColor: theme === "light" ? "black" : "white", 
+                borderColor: theme === "light" ? "var(--noirbeBorder)" : "var(--whiteKely)",
+                color: theme === "light" ? "var(--noirbeBorder)" : "var(--whiteKely)", 
               },
               "&:hover fieldset": {
-                borderColor: theme === "light" ? "black" : "white", 
+                borderColor: theme === "light" ? "var(--noirbeBorder)" : "var(--whiteKely)", 
+                color: theme === "light" ? "var(--noirbeBorder)" : "var(--whiteKely)",
               },
               "&.Mui-focused fieldset": {
-                borderColor: theme === "light" ? "black" : "white", 
+                borderColor: theme === "light" ? "var(--noirbeBorder)" : "var(--whiteKely)", 
+                color: theme === "light" ? "var(--noirbeBorder)" : "var(--whiteKely)",
               },
             },
           }}

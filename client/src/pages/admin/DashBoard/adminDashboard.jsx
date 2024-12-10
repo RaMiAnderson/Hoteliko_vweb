@@ -46,6 +46,23 @@ export default function adminDashboard() {
                         <div className='adDsh_tpBrC'>
                             <MiniTopBar titlePg={"Récapitulatif des ventes"}/>
                         </div>
+                        <div className='content'>
+                            {/* leftPart */}
+                            <div className='leftPart'>
+                                {/* topPart */}
+                                <div className='topPart'>
+                                
+                                </div>
+                                {/* bottomPart */}
+                                <div className='bottomPart'>
+                                
+                                </div>
+                            </div>
+                            {/* rightPart */}
+                            <div className='rightPart'>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </>

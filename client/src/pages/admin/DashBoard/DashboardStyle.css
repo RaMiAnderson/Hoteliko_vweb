@@ -16,3 +16,23 @@
     padding-left: 16px;
     width: 100%;
 }
+
+/* Content */
+.content{
+    width: 100%;
+    height: 100px;
+    padding-right: 16px;
+    display: flex;
+}
+.content .leftPart{
+    width: 45%;
+    height: calc(100vh - 90px);
+}
+.content .rightPart{
+    width: 55%;
+    height: calc(100vh - 90px);
+}
+.leftPart .topPart{
+    width: 100%;
+    height: 400px;
+}
