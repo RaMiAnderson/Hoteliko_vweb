@@ -1,0 +1,34 @@
+.TxtBParent{
+    padding: 10px;
+    /* background-color: red; */
+}
+.TxtBlockInp{
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: end;
+    font-size: .95rem;
+    font-weight: bold;
+}
+
+
+
+.light .TxtBlockInp{
+    /* border: solid 1px rgba(0, 0, 0, 0.459); */
+    border: solid 1px var(--noirbeBorder);
+    color: rgba(0, 0, 0, 0.836);
+}
+.dark .TxtBlockInp{
+    border: solid 1px rgba(255, 255, 255, 0.459);
+    color: var(--white);
+}
+
+.light .BlueSky, .dark .BlueSky{
+    color: var(--blueTheme);
+}
+.light .RedTheme, .dark .RedTheme{
+    color: var(--Them);
+}
+.light .Green, .dark .Green{
+    color: var(--GreenThem);
+}

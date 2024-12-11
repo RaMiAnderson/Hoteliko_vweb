@@ -18,5 +18,13 @@
 .leftPart .topPart{
     width: 100%;
     height: 300px;
-    background-color: blue;
+    padding: 7px;
+    /* background-color: red; */
+}
+.topPart .first, .topPart .second{
+    display: flex;
+    justify-content: space-evenly;
+}
+.topPart .second{
+    margin-top: 20px;
 }
