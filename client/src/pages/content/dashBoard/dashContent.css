@@ -1,0 +1,22 @@
+/* Content */
+.content{
+    width: 100%;
+    height: 100px;
+    padding-right: 16px;
+    display: flex;
+}
+.content .leftPart{
+    width: 45%;
+    height: calc(100vh - 90px);
+    /* background-color: red; */
+}
+.content .rightPart{
+    width: 55%;
+    height: calc(100vh - 90px);
+    /* background-color: green; */
+}
+.leftPart .topPart{
+    width: 100%;
+    height: 300px;
+    background-color: blue;
+}

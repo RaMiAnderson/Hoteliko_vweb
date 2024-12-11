@@ -3,6 +3,8 @@ import getUser from "../../../services/getUserFonction"
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'
 
+//content 
+import C1 from '../../content/dashBoard/dashBoardContent'
 
 //style
 import "./DashboardStyle.css"
@@ -47,21 +49,7 @@ export default function adminDashboard() {
                             <MiniTopBar titlePg={"Récapitulatif des ventes"}/>
                         </div>
                         <div className='content'>
-                            {/* leftPart */}
-                            <div className='leftPart'>
-                                {/* topPart */}
-                                <div className='topPart'>
-                                    
-                                </div>
-                                {/* bottomPart */}
-                                <div className='bottomPart'>
-                                
-                                </div>
-                            </div>
-                            {/* rightPart */}
-                            <div className='rightPart'>
-
-                            </div>
+                            <C1/>
                         </div>
                     </div>
                 </div>
