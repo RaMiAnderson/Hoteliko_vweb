@@ -1,5 +1,6 @@
 # Hotel'iko
 
+## V1.0
 
 ## Recommended IDE Setup
 
