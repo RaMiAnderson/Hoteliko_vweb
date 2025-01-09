@@ -40,7 +40,7 @@ export default function adminArticles() {
       <>
         <div className='adminDashBoardParent'>
           <div className="navParent">
-            <NavbAdmin numPg={2}/>
+             {/* <NavbAdmin numPg={2}/>*/}
           </div>
           <div className="contentParent">
             {/* TopBar */}

@@ -38,7 +38,7 @@ export default function adminFourniss() {
       <>
         <div className='adminDashBoardParent'>
           <div className="navParent">
-            <NavbAdmin numPg={3}/>
+            {/*<NavbAdmin numPg={3}/>*/}
           </div>
           <div className="contentParent">
             {/* TopBar */}

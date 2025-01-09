@@ -38,7 +38,7 @@ export default function adminUserManage() {
       <>
         <div className='adminDashBoardParent'>
           <div className="navParent">
-            <NavbAdmin numPg={8}/>
+            {/*<NavbAdmin numPg={8}/>*/}
           </div>
           <div className="contentParent">
             {/* TopBar */}

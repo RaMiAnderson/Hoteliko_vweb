@@ -38,7 +38,7 @@ export default function adminDepense() {
       <>
         <div className='adminDashBoardParent'>
           <div className="navParent">
-            <NavbAdmin numPg={7}/>
+            {/*<NavbAdmin numPg={7}/>*/}
           </div>
           <div className="contentParent">
             {/* TopBar */}

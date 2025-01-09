@@ -38,7 +38,7 @@ export default function adminRavitaillement() {
       <>
         <div className='adminDashBoardParent'>
           <div className="navParent">
-            <NavbAdmin numPg={6}/>
+            {/*<NavbAdmin numPg={6}/>*/}
           </div>
           <div className="contentParent">
             {/* TopBar */}

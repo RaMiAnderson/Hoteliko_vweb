@@ -38,7 +38,7 @@ export default function adminIventory() {
       <>
         <div className='adminDashBoardParent'>
           <div className="navParent">
-            <NavbAdmin numPg={5}/>
+            {/*<NavbAdmin numPg={5}/>*/}
           </div>
           <div className="contentParent">
             {/* TopBar */}

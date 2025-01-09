@@ -38,7 +38,7 @@ export default function adminClientP() {
       <>
         <div className='adminDashBoardParent'>
           <div className="navParent">
-            <NavbAdmin numPg={4}/>
+            {/*<NavbAdmin numPg={4}/>*/}
           </div>
           <div className="contentParent">
             {/* TopBar */}

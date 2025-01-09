@@ -41,7 +41,7 @@ export default function adminDashboard() {
             <>
                 <div className='adminDashBoardParent'>
                     <div className="navParent">
-                        <NavbAdmin numPg={1}/>
+                        {/*<NavbAdmin numPg={1}/>*/}
                     </div>
                     <div className="contentParent">
                         {/* TopBar */}

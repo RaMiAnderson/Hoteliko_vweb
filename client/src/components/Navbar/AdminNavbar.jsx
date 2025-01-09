@@ -21,14 +21,14 @@ import bonHomm from "../../assets/img/Principale/userPers.png"
 import "./navBarStyle.css"
 import { useTheme } from '../../context/themeContext'
 
-export default function AdminNavbar({numPg}) {
+export default function AdminNavbar() {
   const {theme} = useTheme()
   //Color body
   // document.querySelector(".bodyClass").style.backgroundColor = "#edf1f4"
   
   const navigate = useNavigate();
   
-  const [indexActivList, setIndexActivList] = useState(numPg);
+  const [indexActivList, setIndexActivList] = useState(1);
   const [isToggleActive, setInverseToggle] = useState(true);
 
   let ifClick = (index) => {
@@ -36,49 +36,49 @@ export default function AdminNavbar({numPg}) {
     switch(index){
       case 1 :
         if(location.pathname == "/admin/dashboard")
-          location.reload();
+        {}
         else
           navigate("/admin/dashboard");
         break;
       case 2 :
         if(location.pathname == "/admin/articles")
-          location.reload();
+        {}
         else
           navigate("/admin/articles");
         break;
       case 3 :
         if(location.pathname == "/admin/fournisseurs")
-          location.reload();
+        {}
         else
           navigate("/admin/fournisseurs");
         break;
       case 4 :
         if(location.pathname == "/admin/clients")
-          location.reload();
+        {}
         else
           navigate("/admin/clients");
         break;
       case 5 :
         if(location.pathname == "/admin/inventaires")
-          location.reload();
+        {}
         else
           navigate("/admin/inventaires");
         break;
       case 6 :
         if(location.pathname == "/admin/ravitaillements")
-          location.reload();
+        {}
         else
           navigate("/admin/ravitaillements");
         break;
       case 7 :
         if(location.pathname == "/admin/depenses")
-          location.reload();
+        {}
         else
           navigate("/admin/depenses");
         break;
       case 8 :
         if(location.pathname == "/admin/utilisateurs")
-          location.reload();
+        {}
         else
           navigate("/admin/utilisateurs");
         break;
