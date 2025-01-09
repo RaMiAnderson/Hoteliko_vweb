@@ -6,8 +6,6 @@ import { useNavigate } from 'react-router-dom'
 // style 
 import "./adminDepense.css"
 
-//navBar
-import NavbAdmin from "../../../components/Navbar/AdminNavbar"
 import MiniTopBar from "../../../components/miniTopBar/TopBarStatPG"
  
 

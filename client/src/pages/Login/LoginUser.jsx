@@ -16,7 +16,7 @@ import {toast} from "react-hot-toast"
 let LoginUser = () => {
   //Color body
   if(document.body.classList.contains(".bodyClass"))
-  document.querySelector(".bodyClass").style.backgroundColor = "var(--white)"
+  document.querySelector(".bodyClass").style.backgroundColor = "var(--whiteBe)"
 //CONTROLL IF ALREADY CONNECTED
   const navigate = useNavigate();
   const [token, setToken] = useState(sessionStorage.getItem("user"));
@@ -95,7 +95,7 @@ let LoginUser = () => {
 if(token == null)  
   return (
     <>
-      <div className='loginParent'>
+      <div className='loginParent' style={{backgroundColor:"white"}}>
         <section className="cover"> 
           <img src={LoginCover}  alt='Cover'/>
         </section>

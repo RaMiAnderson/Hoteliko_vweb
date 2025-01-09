@@ -9,8 +9,6 @@ import C1 from '../../content/dashBoard/dashBoardContent'
 //style
 import "./DashboardStyle.css"
 
-//navBar
-import NavbAdmin from "../../../components/Navbar/AdminNavbar"
 //miniTopBar
 import MiniTopBar from "../../../components/miniTopBar/TopBarStatPG"
 
