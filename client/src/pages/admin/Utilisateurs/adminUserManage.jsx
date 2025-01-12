@@ -35,9 +35,6 @@ export default function adminUserManage() {
     return (
       <>
         <div className='adminDashBoardParent'>
-          <div className="navParent">
-            {/*<NavbAdmin numPg={8}/>*/}
-          </div>
           <div className="contentParent">
             {/* TopBar */}
             <div className='user_tpBrC'>

@@ -35,9 +35,6 @@ export default function adminDepense() {
     return (
       <>
         <div className='adminDashBoardParent'>
-          <div className="navParent">
-            {/*<NavbAdmin numPg={7}/>*/}
-          </div>
           <div className="contentParent">
             {/* TopBar */}
             <div className='dep_tpBrC'>

@@ -12,6 +12,10 @@ import AdminInventory from "./pages/admin/Inventaire/adminIventory.jsx"
 import AdminRavitaill from "./pages/admin/Ravitaillement/adminRavitaillement.jsx"
 import AdminU_Manage from "./pages/admin/Utilisateurs/adminUserManage.jsx"
 
+
+// Dash COntent
+import FirstPg from "./pages/content/dashBoard/dashBoardContent.jsx"
+
 // Style
 import './App.css'
 import { BrowserRouter, Routes ,Route, Navigate} from 'react-router-dom'
@@ -43,7 +47,9 @@ import { BrowserRouter, Routes ,Route, Navigate} from 'react-router-dom'
           {/*<Route path="/admin" element={<Navigate to={"/admin/dashboard"} />} /> */}
 
           <Route path="/admin" element={<AdminnParent />}>
-            <Route path="dashboard" element={<AdminnDashboard />} />
+            <Route path="dashboard" element={<AdminnDashboard />}>
+              <Route path="" element={<FirstPg />} />
+            </Route>
             <Route path="articles" element={<AdminArticles />} />
             <Route path="fournisseurs" element={<AdminFournsseur />} />
             <Route path="clients" element={<AdminClientP />} />

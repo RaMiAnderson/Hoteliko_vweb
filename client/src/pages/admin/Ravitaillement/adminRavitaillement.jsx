@@ -35,9 +35,6 @@ export default function adminRavitaillement() {
     return (
       <>
         <div className='adminDashBoardParent'>
-          <div className="navParent">
-            {/*<NavbAdmin numPg={6}/>*/}
-          </div>
           <div className="contentParent">
             {/* TopBar */}
             <div className='rav_tpBrC'>

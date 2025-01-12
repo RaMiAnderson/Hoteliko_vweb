@@ -37,9 +37,6 @@ export default function adminArticles() {
     return (
       <>
         <div className='adminDashBoardParent'>
-          <div className="navParent">
-             {/* <NavbAdmin numPg={2}/>*/}
-          </div>
           <div className="contentParent">
             {/* TopBar */}
             <div className='artcl_tpBrC'>

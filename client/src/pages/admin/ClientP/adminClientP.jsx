@@ -35,9 +35,6 @@ export default function adminClientP() {
     return (
       <>
         <div className='adminDashBoardParent'>
-          <div className="navParent">
-            {/*<NavbAdmin numPg={4}/>*/}
-          </div>
           <div className="contentParent">
             {/* TopBar */}
             <div className='artcl_tpBrC'>

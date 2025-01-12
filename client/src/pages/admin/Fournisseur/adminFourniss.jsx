@@ -35,9 +35,6 @@ export default function adminFourniss() {
     return (
       <>
         <div className='adminDashBoardParent'>
-          <div className="navParent">
-            {/*<NavbAdmin numPg={3}/>*/}
-          </div>
           <div className="contentParent">
             {/* TopBar */}
             <div className='artcl_tpBrC'>

@@ -1,10 +1,7 @@
 import React from 'react'
 import getUser from "../../../services/getUserFonction"
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom'
-
-//content 
-import C1 from '../../content/dashBoard/dashBoardContent'
+import { useNavigate, Outlet } from 'react-router-dom'
 
 //style
 import "./DashboardStyle.css"
@@ -44,7 +41,7 @@ export default function adminDashboard() {
                             <MiniTopBar titlePg={"Récapitulatif des ventes"}/>
                         </div>
                         <div className='content'>
-                            <C1/>
+                            <Outlet />
                         </div>
                     </div>
                 </div>
