@@ -10,7 +10,7 @@
     height: calc(100vh - 90px);
     /* background-color: red; */
 }
-.content .rightPart{
+.content .rightPart{ 
     width: 55%;
     height: calc(100vh - 90px);
     /* background-color: green; */

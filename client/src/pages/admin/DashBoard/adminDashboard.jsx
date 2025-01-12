@@ -38,9 +38,6 @@ export default function adminDashboard() {
         return (
             <>
                 <div className='adminDashBoardParent'>
-                    <div className="navParent">
-                        {/*<NavbAdmin numPg={1}/>*/}
-                    </div>
                     <div className="contentParent">
                         {/* TopBar */}
                         <div className='adDsh_tpBrC'>
