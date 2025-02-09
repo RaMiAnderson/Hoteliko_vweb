@@ -28,3 +28,8 @@
 .topPart .second{
     margin-top: 20px;
 }
+
+.topPart .partOne{
+    display: flex;
+    /* justify-content: space-around; */
+}

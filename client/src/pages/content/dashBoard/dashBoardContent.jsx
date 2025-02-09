@@ -9,7 +9,10 @@ const dashBoardContent = () => {
       <div className="leftPart">
         {/* topPart */}
         <div className="topPart">
-         <CardMoney /> 
+         <div className="partOne">
+          <CardMoney color="var(--GreenThem)" label="Total Vente" montant="15000000" stats="+10%"/>
+          <CardMoney color="var(--GreenThem)" label="Total Vente" montant="15000000"/>
+         </div>
         </div>
         {/* bottomPart */}
         <div className="bottomPart">
@@ -18,7 +21,7 @@ const dashBoardContent = () => {
       </div>
       {/* rightPart */}
       <div className="rightPart">
-
+ 
       </div>
     </>
   );
