@@ -9,9 +9,9 @@ const CardMoney = ({color, label, montant, stats}) => {
       <div className='cardMoneyParent'>
         <div className='leftColor' style={{backgroundColor:color}}></div>
         <div className='rightContent'>
-          <div style={{display:"flex"}}>
+          <div style={{display:"flex", justifyContent:"space-between", width:"100%"}}>
               <p className='label'>{label}</p>
-              <p className='miniStat' style={{color: "var(--GreenThem)"}}>{stats}</p>
+              <p className='miniStat' style={{color: color}}>{stats}</p>
           </div>
           <p className='montant'>Ar {montant}</p>
         </div>
