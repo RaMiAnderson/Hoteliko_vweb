@@ -1,0 +1,39 @@
+.cardMoneyParent{
+    width: 260px;
+    height: 80px;
+    border: 1px solid var(--grayTransp);
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    overflow: hidden;
+    /* background-color: red; */
+}
+.cardMoneyParent .leftColor{
+    height: 100%;
+    width: 4px;
+    /* background-color: red; */
+}
+.cardMoneyParent .rightContent{
+    height: 100%;
+    width: calc(100% - 25px);
+    padding-top: 8px;
+    margin-left: 25px;
+}
+.rightContent .label{
+    opacity: .65;
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+.rightContent .miniStat{
+    margin-right: 20px;
+    opacity: .8;
+    font-family: poppinsBold;
+    border-radius: 10px;
+}
+.rightContent .montant{
+    font-size: 1.3rem;
+    color: var(w--noirbe);
+    opacity: .75;
+    font-family: poppinsBold;
+}

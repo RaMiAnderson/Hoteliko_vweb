@@ -6,8 +6,6 @@ import { useNavigate } from 'react-router-dom'
 // style 
 import "./adminRavitaillement.css"
 
-//navBar
-import NavbAdmin from "../../../components/Navbar/AdminNavbar"
 import TopNavSansDt from "../../../components/miniTopBar/TopBarSansDate"
 
 
@@ -37,9 +35,6 @@ export default function adminRavitaillement() {
     return (
       <>
         <div className='adminDashBoardParent'>
-          <div className="navParent">
-            <NavbAdmin numPg={6}/>
-          </div>
           <div className="contentParent">
             {/* TopBar */}
             <div className='rav_tpBrC'>

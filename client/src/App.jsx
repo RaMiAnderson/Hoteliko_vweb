@@ -2,6 +2,7 @@ import React, { useEffect }  from 'react'
 
 // Page 
 import LoginUser from "./pages/Login/LoginUser.jsx"
+import AdminnParent from "./pages/admin/ParentPG.jsx"
 import AdminnDashboard from "./pages/admin/DashBoard/adminDashboard.jsx"
 import AdminArticles from "./pages/admin/Articles/adminArticles.jsx"
 import AdminClientP from "./pages/admin/ClientP/adminClientP.jsx"
@@ -11,61 +12,14 @@ import AdminInventory from "./pages/admin/Inventaire/adminIventory.jsx"
 import AdminRavitaill from "./pages/admin/Ravitaillement/adminRavitaillement.jsx"
 import AdminU_Manage from "./pages/admin/Utilisateurs/adminUserManage.jsx"
 
+
+// Dash COntent
+import FirstPg from "./pages/content/dashBoard/dashBoardContent.jsx"
+
 // Style
 import './App.css'
 import { BrowserRouter, Routes ,Route, Navigate} from 'react-router-dom'
 
-/*
-const LoginPage = () => {
-  return <LoginUser/>
-}
-
-const AdminDashboard = () => {
-  return <AdminnDashboard/>
-}
-
-const AdminArtclPg = () => {
-  return <AdminArticles/>
-}
-
-const AdminClntPg = () => {
-  return <AdminClientP/>
-}
-
-const AdminDepensePg = () => {
-  return <AdminDepense/>
-}
-
-const AdminFournssPg = () => {
-  return <AdminFournsseur/>
-}
-
-const AdminInvtryPg = () => {
-  return <AdminInventory/>
-}
-
-const AdminRavtaillPg = () => {
-  return <AdminRavitaill/>
-}
-
-const AdminU_M_Pg = () => {
-  return <AdminU_Manage/>
-}
-
-
-export default {
-  LoginPage,
-  AdminDashboard,
-  AdminArtclPg,
-  AdminClntPg,
-  AdminDepensePg,
-  AdminFournssPg,
-  AdminInvtryPg,
-  AdminRavtaillPg,
-  AdminU_M_Pg
-}
-
-*/
 
  const App = ()=>{
   useEffect(() => {
@@ -83,22 +37,30 @@ export default {
   return (
     <>
       <BrowserRouter>
-          <Routes>
-                <Route path='/' element={<Navigate to={"/auth/login"} replace/>}/>
-                <Route path='/auth/login' element={<LoginUser/>} />
-                <Route path='/auth' element={<Navigate to={"/auth/login"} replace/>}/>
-                <Route path='/admin' element={<Navigate to={"/admin/dashboard"}/>}/>
-                <Route path='/admin/dashboard' element={<AdminnDashboard/>} />
-                <Route path='/admin/articles' element={<AdminArticles/>} />
-                <Route path='/admin/fournisseurs' element={<AdminFournsseur/>} />
-                <Route path='/admin/clients' element={<AdminClientP/>} />
-                <Route path='/admin/inventaires' element={<AdminInventory/>} />
-                <Route path='/admin/ravitaillements' element={<AdminRavitaill/>} />
-                <Route path='/admin/depenses' element={<AdminDepense/>} />
-                <Route path='/admin/utilisateurs' element={<AdminU_Manage/>} />
-          </Routes>
+        <Routes>
+          <Route path="/" element={<Navigate to={"/auth/login"} replace />} />
+          <Route path="/auth/login" element={<LoginUser />} />
+          <Route
+            path="/auth"
+            element={<Navigate to={"/auth/login"} replace />}
+          />
+          {/*<Route path="/admin" element={<Navigate to={"/admin/dashboard"} />} /> */}
+
+          <Route path="/admin" element={<AdminnParent />}>
+            <Route path="dashboard" element={<AdminnDashboard />}>
+              <Route path="" element={<FirstPg />} />
+            </Route>
+            <Route path="articles" element={<AdminArticles />} />
+            <Route path="fournisseurs" element={<AdminFournsseur />} />
+            <Route path="clients" element={<AdminClientP />} />
+            <Route path="inventaires" element={<AdminInventory />} />
+            <Route path="ravitaillements" element={<AdminRavitaill />} />
+            <Route path="depenses" element={<AdminDepense />} />
+            <Route path="utilisateurs" element={<AdminU_Manage />} />
+          </Route>
+        </Routes>
       </BrowserRouter>
     </>
-  )
+  );
 }
 export default App

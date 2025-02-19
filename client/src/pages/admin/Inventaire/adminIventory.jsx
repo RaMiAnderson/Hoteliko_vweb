@@ -6,8 +6,6 @@ import { useNavigate } from 'react-router-dom'
 // style 
 import "./adminIventory.css"
 
-//navBar
-import NavbAdmin from "../../../components/Navbar/AdminNavbar"
 import MiniTopBar from "../../../components/miniTopBar/TopBarStatPG"
  
 
@@ -37,9 +35,6 @@ export default function adminIventory() {
     return (
       <>
         <div className='adminDashBoardParent'>
-          <div className="navParent">
-            <NavbAdmin numPg={5}/>
-          </div>
           <div className="contentParent">
             {/* TopBar */}
             <div className='inv_tpBrC'>

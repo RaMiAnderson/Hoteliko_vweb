@@ -10,7 +10,7 @@
     height: calc(100vh - 90px);
     /* background-color: red; */
 }
-.content .rightPart{
+.content .rightPart{ 
     width: 55%;
     height: calc(100vh - 90px);
     /* background-color: green; */
@@ -27,4 +27,9 @@
 }
 .topPart .second{
     margin-top: 20px;
+}
+
+.topPart .partOne{
+    display: flex;
+    /* justify-content: space-around; */
 }

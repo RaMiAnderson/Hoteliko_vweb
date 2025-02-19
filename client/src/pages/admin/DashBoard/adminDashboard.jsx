@@ -1,16 +1,11 @@
 import React from 'react'
 import getUser from "../../../services/getUserFonction"
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom'
-
-//content 
-import C1 from '../../content/dashBoard/dashBoardContent'
+import { useNavigate, Outlet } from 'react-router-dom'
 
 //style
 import "./DashboardStyle.css"
 
-//navBar
-import NavbAdmin from "../../../components/Navbar/AdminNavbar"
 //miniTopBar
 import MiniTopBar from "../../../components/miniTopBar/TopBarStatPG"
 
@@ -40,16 +35,13 @@ export default function adminDashboard() {
         return (
             <>
                 <div className='adminDashBoardParent'>
-                    <div className="navParent">
-                        <NavbAdmin numPg={1}/>
-                    </div>
                     <div className="contentParent">
                         {/* TopBar */}
                         <div className='adDsh_tpBrC'>
                             <MiniTopBar titlePg={"Récapitulatif des ventes"}/>
                         </div>
                         <div className='content'>
-                            <C1/>
+                            <Outlet />
                         </div>
                     </div>
                 </div>
