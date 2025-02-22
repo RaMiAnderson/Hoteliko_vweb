@@ -32,7 +32,7 @@
 }
 .rightContent .montant{
     font-size: 1.3rem;
-    color: var(w--noirbe);
+    color: var(--noirbe);
     opacity: .75;
     font-family: poppinsBold;
 }
