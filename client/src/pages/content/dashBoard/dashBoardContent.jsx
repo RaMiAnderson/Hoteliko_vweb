@@ -10,8 +10,14 @@ const dashBoardContent = () => {
         {/* topPart */}
         <div className="topPart">
          <div className="partOne">
-          <CardMoney color="var(--GreenThem)" label="Total Vente" montant="15000000" stats="+10%"/>
-          <CardMoney color="var(--GreenThem)" label="Total Vente" montant="15000000"/>
+          <CardMoney color="var(--cardMVente)" label="Total Vente" montant="15 000 000" stats="+10%"/>
+          <CardMoney color="var(--cardMRevient)" label="Total Revient" montant="11 000 000"/>
+          <CardMoney color="var(--cardMRevient)" label="Total Revient" montant="11 000 000"/>
+         </div>
+         <div className="partOne">
+          <CardMoney color="var(--cardMVente)" label="Total Vente" montant="15 000 000" stats="+10%"/>
+          <CardMoney color="var(--cardMRevient)" label="Total Revient" montant="11 000 000"/>
+          <CardMoney color="var(--cardMRevient)" label="Total Revient" montant="11 000 000"/>
          </div>
         </div>
         {/* bottomPart */}
