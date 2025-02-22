@@ -1,8 +1,10 @@
 import React from "react";
 import './dashContent.css'
 import CardMoney from "../../../components/CardMoney/CardMoney";
+import LineChart from "../../../components/lineChart/LineChartStat.jsx";
 
 const dashBoardContent = () => {
+  
   return (
     <>
       {/* leftPart */}
@@ -31,7 +33,7 @@ const dashBoardContent = () => {
         </div>
         {/* bottomPart */}
         <div className="bottomPart">
-
+          <LineChart />
         </div>
       </div>
       {/* rightPart */}
