@@ -28,3 +28,9 @@
 .topPart .partOne:not(:first-child){
     margin-top: 15px;
 }
+.partOne .titlePart{
+    opacity: .8;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 1.1rem;
+}

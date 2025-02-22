@@ -19,7 +19,15 @@ const dashBoardContent = () => {
           <CardMoney color="var(--cardMVente)" label="Reste Encaisse" montant="2 000 000"/>
           <CardMoney color="var(--cardMEncaisse)" label="Total Bénéfice" montant="3 000 000"/>
          </div>
-         
+         {/* Details d'encaissmnt */}
+         <div className="partOne">
+          <h3 className="titlePart">Détails des encaissés</h3>
+         </div>
+         <div className="partOne">
+          <CardMoney color="var(--whiteTransp)" label="Espece" montant="8 000 000"/>
+          <CardMoney color="var(--whiteTransp)" label="Mobile Money" montant="2 000 000" stats="+10%"/>
+          <CardMoney color="var(--whiteTransp)" label="Autre mode" montant="3 000 000"/>
+         </div>
         </div>
         {/* bottomPart */}
         <div className="bottomPart">

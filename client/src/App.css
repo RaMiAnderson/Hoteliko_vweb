@@ -17,6 +17,7 @@
   padding: 0;
   outline: none;
   box-sizing: border-box;
+  font-size: 0.96rem;
 }
 
 :root { 
@@ -36,8 +37,8 @@
 
   /* CardMoney Color*/
   --cardMVente : #2196F3;
-  --cardMRevient : #FFC107;
-  --cardMDepense : #F44336;
+  --cardMRevient : #e9af00;
+  --cardMDepense : #eb6258;
   --cardMEncaisse : rgb(79, 182, 79);
 
   /* dark Mode */
