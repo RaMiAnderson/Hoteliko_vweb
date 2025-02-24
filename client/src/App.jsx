@@ -47,6 +47,8 @@ import { BrowserRouter, Routes ,Route, Navigate} from 'react-router-dom'
           {/*<Route path="/admin" element={<Navigate to={"/admin/dashboard"} />} /> */}
 
           <Route path="/admin" element={<AdminnParent />}>
+            {/* redirection */}
+            <Route index element={<Navigate to="dashboard" replace />} />
             <Route path="dashboard" element={<AdminnDashboard />}>
               <Route path="" element={<FirstPg />} />
             </Route>

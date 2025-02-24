@@ -27,7 +27,8 @@ let LoginUser = () => {
       
     useEffect(() => {
         if(userData != undefined){
-          navigate("/"+userData.fonction)
+          console.log("fonctionee " + userData.fonction.toLowerCase());
+          navigate("/" + userData.fonction.toLowerCase())
         }
     })
   }
