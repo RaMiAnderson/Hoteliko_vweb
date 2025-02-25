@@ -1,7 +1,8 @@
 import React from "react";
-import './dashContent.css'
+import './dashContent.css';
 import CardMoney from "../../../components/CardMoney/CardMoney";
 import LineChart from "../../../components/lineChart/LineChartStat.jsx";
+import TableList from "../../../components/TableList/TableList1.jsx";
 
 const dashBoardContent = () => {
   
@@ -38,7 +39,7 @@ const dashBoardContent = () => {
       </div>
       {/* rightPart */}
       <div className="rightPart">
- 
+        <TableList />
       </div>
     </>
   );
