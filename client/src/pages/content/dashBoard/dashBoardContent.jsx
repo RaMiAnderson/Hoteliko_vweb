@@ -13,14 +13,14 @@ const dashBoardContent = () => {
         {/* topPart */}
         <div className="topPart">
          <div className="partOne">
-          <CardMoney color="var(--cardMVente)" label="Total Vente" montant="15 000 000" stats="+10%"/>
-          <CardMoney color="var(--cardMRevient)" label="Total Revient" montant="11 000 000"/>
-          <CardMoney color="var(--cardMDepense)" label="Total Dépense" montant="1 000 000"/>
+          <CardMoney color="var(--cardMVente)" label="Vente" montant="15 000 000" stats="+10%"/>
+          <CardMoney color="var(--cardMRevient)" label="Revient" montant="11 000 000"/>
+          <CardMoney color="var(--cardMDepense)" label="Dépense" montant="1 000 000"/>
          </div>
          <div className="partOne">
-          <CardMoney color="var(--cardMVente)" label="Total Encaisse" montant="13 000 000" stats="+10%"/>
-          <CardMoney color="var(--cardMVente)" label="Reste Encaisse" montant="2 000 000"/>
-          <CardMoney color="var(--cardMEncaisse)" label="Total Bénéfice" montant="3 000 000"/>
+          <CardMoney color="var(--cardMVente)" label="Encaissés" montant="13 000 000" stats="+10%"/>
+          <CardMoney color="var(--cardMVente)" label="À Encaisser" montant="2 000 000"/>
+          <CardMoney color="var(--cardMEncaisse)" label="Bénéfices" montant="3 000 000"/>
          </div>
          {/* Details d'encaissmnt */}
          <div className="partOne">
@@ -28,8 +28,8 @@ const dashBoardContent = () => {
          </div>
          <div className="partOne">
           <CardMoney color="var(--whiteTransp)" label="Espece" montant="8 000 000"/>
-          <CardMoney color="var(--whiteTransp)" label="Mobile Money" montant="2 000 000" stats="+10%"/>
-          <CardMoney color="var(--whiteTransp)" label="Autre mode" montant="3 000 000"/>
+          <CardMoney color="var(--whiteTransp)" label="Mobile" montant="2 000 000" stats="+10%"/>
+          <CardMoney color="var(--whiteTransp)" label="Autre" montant="3 000 000"/>
          </div>
         </div>
         {/* bottomPart */}
