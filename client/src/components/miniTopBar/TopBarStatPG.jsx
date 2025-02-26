@@ -27,12 +27,13 @@ export default function TopBarStatPG({titlePg}) {
               brdrColorH={"#eb6258"}
               textBtn={"Nouveau Ticket"} 
               width={200} 
-              padding={"16px 12px 16px 3px"} 
+              padding={"7.7px 12px 9px 3px"} 
               StartIcon={<AddIcon/>}>
 
             </BasicButton>
             </div>
             <div className='DateTest'>
+           
                 <DateTest  label={"Date début"}/>
             </div>
             <div className='DateTest'>

@@ -84,14 +84,17 @@ export default function CustomizedMenus() {
         onClick={handleClick}
         sx={{
             border:"solid 1px",
-            padding:"6px 10px"
+            padding:"3px  6px ",
+           minWidth:"35px"
         }}
         // endIcon={<KeyboardArrowDownIcon />}
       >
         {/* Eto content */}
         <SegmentIcon sx={{
-            width:"40px", 
-            height:"40px"
+            width:"32px", 
+           
+            height:"32px",
+           
             }}/>        
       </Button>
       <StyledMenu

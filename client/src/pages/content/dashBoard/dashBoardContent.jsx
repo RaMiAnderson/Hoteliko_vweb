@@ -39,7 +39,7 @@ const dashBoardContent = () => {
       </div>
       {/* rightPart */}
       <div className="rightPart">
-        <TableList />
+        {/* <TableList /> */}
       </div>
     </>
   );
