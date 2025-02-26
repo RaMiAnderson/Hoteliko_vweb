@@ -17,8 +17,9 @@
   padding: 0;
   outline: none;
   box-sizing: border-box;
-  font-size: 0.96rem;
+  /* font-size: 0.96rem; */
 }
+
 
 :root { 
   --noirbe : rgb(29, 29, 29);
@@ -45,7 +46,6 @@
 
   --darkBodyColor : rgb(37, 37, 37);
 }
-
 body.light{
   background-color: var(--whiteBe) !important;
 }

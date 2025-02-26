@@ -63,6 +63,7 @@ export default function ControlledComponent({ label }) {
           format="DD-MM-YYYY"
           label={label}
           value={value}
+          
           onChange={(newValue) => setValue(newValue)}
           sx={{
             width: '200px', // Largeur ajustable
@@ -78,9 +79,18 @@ export default function ControlledComponent({ label }) {
             },
             "& .MuiInputLabel-root": {
               fontSize: '0.96rem', // Ajuste la taille du label
-              top: '-4px', // Remonte légèrement le label pour l'aligner
+              top: '-6px', // Remonte légèrement le label pour l'aligner
               color: theme === "light" ? "var(--noirbeBorder)" : "var(--whiteKely)",
             },
+            "& .MuiOutlinedInput-input":{
+                top:"10px",
+                fontSize:"0.96rem"
+            },
+            "& .MuiInputLabel-shrink":{
+              top:"2px"
+            },
+           
+            
             "& .MuiOutlinedInput-root": {
               height: '40px', // Applique la même hauteur
               minHeight: '40px',
@@ -93,6 +103,9 @@ export default function ControlledComponent({ label }) {
               "&.Mui-focused fieldset": {
                 borderColor: theme === "light" ? "var(--noirbeBorder)" : "var(--whiteKely)",
               },
+              ".MuiSvgIcon-root":{
+                color: theme == "light" ? "var(--noirbeBorder)" : "var(--whiteKely)"
+              }
             },
             "& .MuiSvgIcon-root": {
               fontSize: '20px', // Ajuste la taille de l’icône
