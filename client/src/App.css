@@ -22,6 +22,13 @@
 
 
 :root { 
+  /* fontSize */
+  --titlePpal: 1.5rem;
+  --litleTitle: 1.125rem;
+  --textPpal: 0.875rem;
+  --textSecondary:0.75rem;
+  --btnText:0.875rem;
+
   --noirbe : rgb(29, 29, 29);
   --noirbeBorder: rgba(29, 29, 29, 0.603);
   --white : #edf1f4;
