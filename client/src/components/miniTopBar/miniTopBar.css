@@ -29,7 +29,7 @@
 .titlePgStyle{
     font-family: poppinsBold;
     opacity: .8;
-    font-size: 22px;
+    font-size: var(--titlePpal);
 }
 .mnTpBr_rightPrt .More{
     margin-left: 10px;

@@ -19,7 +19,7 @@ export default function TopBarStatPG({titlePg}) {
             <div className='BtnNewTick'>
             <BasicButton 
               variant={"contained"}
-              color={"var(--white)"}
+              color={"var(--white)"} 
               bgColor={"#f87269"} 
               bgColorH={"#eb6258"} 
               bgColorA={"#E42417"} 

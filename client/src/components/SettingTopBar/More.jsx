@@ -107,12 +107,12 @@ export default function CustomizedMenus() {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose} disableRipple >
-          <StyleIcon sx={{width:"25px", height:"25px"}} />
-          Ticket Journalier
+          <StyleIcon sx={{width:"20px", height:"20px"}} />
+          <p style={{fontSize: 'var(--basicText)'}}>Ticket Journalier</p>
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple >
-          <SmartphoneIcon sx={{width:"25px", height:"25px"}} />
-          Nous contacter ?
+          <SmartphoneIcon sx={{width:"20px", height:"20px"}} />
+          <p style={{fontSize: 'var(--basicText)'}}>Nous contacter ?</p>
         </MenuItem>
         <Divider sx={{ my: 0.5 }} />
         <MenuItem onClick={handle} disableRipple>
@@ -123,15 +123,15 @@ export default function CustomizedMenus() {
             flexDirection:"column", 
             alignItems:"center"}}>
           Version 1.0
-          <span style={{fontSize:"12px"}}>
+          <span style={{fontSize:"var(--basicText)"}}>
             catégorie : simple
           </span> 
-          <span style={{fontSize:"12px"}}>
+          <span style={{fontSize:"var(--basicText)"}}>
             abonnement restant: <strong>25j</strong>
           </span>
           <br /> 
-          <span style={{fontSize:"12px"}}>
-            Logiciel avec une license,  toute <strong>copie <br /> ou crack</strong> du logiciel est <strong>strictement <br /> interdite</strong>(Fuck)
+          <span style={{fontSize:"var(--basicText)"}}>
+            Logiciel avec une license,  toute <strong>copie <br /> ou crack</strong> du logiciel est <strong>strictement <br /> interdite</strong>
           </span> 
           
         </MenuItem>

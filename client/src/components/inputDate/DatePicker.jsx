@@ -31,16 +31,17 @@ export default function ControlledComponent({ label }) {
               color: theme === "light" ? "var(--noirbeBorder)" : "var(--whiteKely)",
             },
             "& .MuiInputLabel-root": {
-              fontSize: '0.96rem', // Ajuste la taille du label
-              top: '-6px', // Remonte légèrement le label pour l'aligner
+              fontSize: 'var(--basicText)', // Ajuste la taille du label
+              top: '-4px', // Remonte légèrement le label pour l'aligner
               color: theme === "light" ? "var(--noirbeBorder)" : "var(--whiteKely)",
             },
             "& .MuiOutlinedInput-input":{
                 top:"10px",
-                fontSize:"0.96rem"
+                fontSize:"var(--basicText)"
             },
             "& .MuiInputLabel-shrink":{
-              top:"2px"
+              top:"2px",
+              fontSize: '15px',
             },
            
             

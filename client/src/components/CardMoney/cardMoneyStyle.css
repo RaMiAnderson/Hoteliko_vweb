@@ -23,15 +23,17 @@
 }
 .rightContent .label{
     margin-bottom: 2px;
+    font-size: var(--textPpal);
 }
 .rightContent .miniStat{
     margin-right: 18px;
     opacity: .8;
     font-family: poppinsBold;
     border-radius: 10px;
+    font-size: var(--textPpal);
 }
 .rightContent .montant{
-    font-size: 1.14rem;
+    font-size: var(--litleTitle); 
     color: var(--noirbe);
     opacity: .75;
     font-family: poppinsBold;

@@ -16,7 +16,7 @@ import Toggle from "@mui/icons-material/CompareArrowsOutlined"
 
 import bonHomm from "../../assets/img/Principale/userPers.png"
 
-
+ 
 //Style
 import "./navBarStyle.css"
 import { useTheme } from '../../context/themeContext'

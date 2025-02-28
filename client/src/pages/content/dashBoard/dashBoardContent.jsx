@@ -25,7 +25,7 @@ const dashBoardContent = () => {
          {/* Details d'encaissmnt */}
          <div className="partOne">
           <h3 className="titlePart">Détails des encaissés</h3>
-         </div>
+         </div> 
          <div className="partOne">
           <CardMoney color="var(--whiteTransp)" label="Espece" montant="8 000 000"/>
           <CardMoney color="var(--whiteTransp)" label="Mobile" montant="2 000 000" stats="+10%"/>

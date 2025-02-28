@@ -23,7 +23,7 @@ export default function CustomizedButtons({variant, color, bgColor, bgColorH, bg
         alignItems : "center",
         justifyContent : "space-evenly",
         textTransform: 'none',
-        fontSize: "0.96rem",
+        fontSize: "var(--btnText)",
         padding: padding,
         lineHeight: 1.5,
         backgroundColor: bgColor,
