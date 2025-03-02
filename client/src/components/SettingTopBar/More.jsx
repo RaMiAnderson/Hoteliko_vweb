@@ -13,7 +13,7 @@ import SegmentIcon from '@mui/icons-material/Segment';
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import DarkOrWhite from "../DarkOrWhiteToggle/DarkOrWhite"
 import StyleIcon from '@mui/icons-material/Style';
-import { useTheme } from '@emotion/react';
+// import { useTheme } from '@emotion/react';
 
 const StyledMenu = styled((props) => (
   <Menu
