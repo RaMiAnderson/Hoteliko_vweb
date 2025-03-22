@@ -36,7 +36,7 @@ const dashBoardContent = () => {
         <div className="bottomPart">
           <LineChart />
         </div>
-      </div>
+      </div> 
       {/* rightPart */}
       <div className="rightPart">
         {/* <TableList /> */}
