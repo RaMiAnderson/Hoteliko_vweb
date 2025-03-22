@@ -2,19 +2,3 @@
     /* display: flex; */
     width: 100%;
 }
-
-.navParent{
-    margin-left: 10px;
-    /* width: 260px; */
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    /* position: fixed; */
-}
-
-.contentParent{
-    padding-left: 16px;
-    width: 100%;
-    /* position: fixed; */
-    /* background-color: blue; */
-}

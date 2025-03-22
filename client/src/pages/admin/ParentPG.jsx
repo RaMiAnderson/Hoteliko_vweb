@@ -21,6 +21,9 @@ const ParentPG = () => {
                     <div className="navParent"> 
                         <NavbAdmin/>
                     </div>
+                    {/* <div className="contentParent">
+                        <Outlet />
+                    </div> */}
                     <div className="contentParent">
                         <Outlet />
                     </div>

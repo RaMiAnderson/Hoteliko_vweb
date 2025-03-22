@@ -35,12 +35,12 @@ export default function adminDashboard() {
         return (
             <>
                 <div className='adminDashBoardParent'>
-                    <div className="contentParent">
+                    <div className="DashcontentParent">
                         {/* TopBar */}
                         <div className='adDsh_tpBrC'>
                             <MiniTopBar titlePg={"Récapitulatif des ventes"}/>
                         </div>
-                        <div className='content'>
+                        <div className='Dashcontent'>
                             <Outlet />
                         </div>
                     </div>

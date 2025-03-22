@@ -2,6 +2,12 @@
 
 ## V1.0
 
+## Minimum Display Requirement : 
+### Display : HD 720p (1280 x 720)
+
+## Recemended Display :
+### Display : FHD 1080p (1920 x 1080)
+
 ## Configuration IDE recommandée
 
 [VSCode](https://code.visualstudio.com/) (and disable Vetur).

@@ -23,7 +23,7 @@ const dashBoardContent = () => {
           <CardMoney color="var(--cardMEncaisse)" label="Bénéfices" montant="3 000 000"/>
          </div>
          {/* Details d'encaissmnt */}
-         <div className="partOne">
+         <div>
           <h3 className="titlePart">Détails des encaissés</h3>
          </div> 
          <div className="partOne">
@@ -34,12 +34,12 @@ const dashBoardContent = () => {
         </div>
         {/* bottomPart */}
         <div className="bottomPart">
-          <LineChart />
+          {/* <LineChart /> */}
         </div>
       </div> 
       {/* rightPart */}
       <div className="rightPart">
-        {/* <TableList /> */}
+        <TableList />
       </div>
     </>
   );
