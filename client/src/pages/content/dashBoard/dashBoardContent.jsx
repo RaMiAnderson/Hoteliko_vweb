@@ -3,6 +3,8 @@ import './dashContent.css';
 import CardMoney from "../../../components/CardMoney/CardMoney";
 import LineChart from "../../../components/lineChart/LineChartStat.jsx";
 import TableList from "../../../components/TableList/TableList1.jsx";
+import InputSearch from "../../../components/InputSearch/InputSearch.jsx"
+import BasicButton from "../../../components/BasicButton/BasicButtons.jsx"
 
 const dashBoardContent = () => {
   
@@ -34,12 +36,32 @@ const dashBoardContent = () => {
         </div>
         {/* bottomPart */}
         <div className="bottomPart">
-          {/* <LineChart /> */}
+          <LineChart />
         </div>
       </div> 
       {/* rightPart */}
       <div className="rightPart">
-        <TableList />
+        <div className="findSection">
+          <h4>Liste des Produits</h4>
+          <section>
+            <div style={{marginRight : "10px"}}><InputSearch /></div>
+            <BasicButton
+              variant={"contained"}
+              color={"var(--white)"} 
+              bgColor={"#f87269"} 
+              bgColorH={"#eb6258"} 
+              bgColorA={"#E42417"} 
+              brdrColor={"#f87269"}
+              brdrColorH={"#eb6258"}
+              textBtn={"Rechercher"} 
+              width={100} 
+              padding={"7.7px 0px 9px 0px"} 
+            />
+          </section>
+        </div>
+        <div className="tableAff">
+          <TableList />
+        </div>
       </div>
     </>
   );

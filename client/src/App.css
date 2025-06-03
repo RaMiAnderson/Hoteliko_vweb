@@ -22,6 +22,10 @@
 
 
 :root { 
+
+  /* boxshadow */
+    --Paper-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
   /* fontSize */
   --titlePpal: 1.2rem;
   --litleTitle: 1.04rem;
@@ -35,6 +39,7 @@
   --whiteKely : #edf1f4cb;
   --whiteTransp : #969696;
   --whiteBe : rgb(248, 247, 247);
+  --whiteBeMax : #fff;
   --whiteNav :  #8ac2ec;
   --blueTheme : rgb(50, 138, 253);
   --Them : #eb6258;
